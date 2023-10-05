@@ -55,7 +55,7 @@ function App() {
           element: <Invite />,
         },
         {
-          path: "/Connectpage",
+          path: "/connectpage",
           element: <Connect />,
         },
         {
