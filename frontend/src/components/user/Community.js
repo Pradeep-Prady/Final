@@ -62,11 +62,7 @@ const Community = () => {
             <div className="flex flex-col">
               <div className="flex flex-row">
                 <div>
-                  <img
-                    className="rounded-full w-14 h-14"
-                    alt="Dp"
-                    src={ivgpic}
-                  />
+                  <img className="rounded-full w-14 h-14" alt="Dp" src={ivgpic} />
                 </div>
                 <div className="flex flex-row ml-2 items-center">
                   <div className="flex flex-col">
@@ -199,193 +195,174 @@ const Community = () => {
                 <hr class="flex-grow border-t border-gray-300"></hr>
               </div>
             </div>
+              
           </div>
         </div>
         <div className="relative ml-[45px] bg-gray-25 w-[600px] h-[630px] rounded-2xl shadow-md border-2 border-blue-200">
-          <div className="flex flex-col w-[600px] h-[630px] p-4">
-            <div className="flex flex-row mb-2 bg-slate-100 py-2 rounded-md">
-              <div className="drop-shadow-2xl ml-3">
-                <img
-                  className=" rounded-full h-10 w-10 border-none items-center shadow-md"
-                  src={ivgpic}
-                  alt="profile pic"
-                />
-              </div>
-
-              <div className="p-2 ml-1">
-                <label>RV SYED</label>
-              </div>
-            </div>
-
-            <div className="overflow-y-auto mb-12">
-              <div className="px-3">
-                <div className="flex flex-col relative">
-                  <div className="flex flex-row">
-                    <div>
-                      <img
-                        className="rounded-full h-10 w-10 align-middle border-none"
-                        src={ivgpic}
-                        alt="Sender"
-                      />
-                    </div>
-                    <div class="flex flex-col">
-                      <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 shadow-md">
-                        Hi hello how are you buddy
-                      </div>
-                      <div className="ml-3 mt-1 text-[13px]">5:59pm</div>
-                    </div>
+        <div className="flex flex-col w-[600px] h-[630px] p-4">
+          <div className="flex flex-row mb-2 bg-slate-100 py-2 rounded-md">
+          <div className="drop-shadow-2xl ml-3"><img className=" rounded-full h-10 w-10 border-none items-center shadow-md" src={ivgpic} alt="profile pic"/></div>
+            
+            <div className="p-2 ml-1"><label>RV SYED</label></div>
+          </div>
+          
+          <div className="overflow-y-auto mb-12">
+            <div className="px-3">
+              <div className="flex flex-col relative">
+                <div className="flex flex-row">
+                
+                  <div>
+                    <img
+                      className="rounded-full h-10 w-10 align-middle border-none"
+                      src={ivgpic}
+                      alt="Sender"
+                    />
                   </div>
-                  <div className="flex flex-row py-3 md:flex md:flex-grow justify-end space-x-1">
-                    <div className="flex flex-col">
-                      <div className="bg-white rounded-2xl p-3 mr-[48px] ml-[48px] shadow-md right-0">
-                        Hi, im fine bro!
-                      </div>
-                      <div class="md:flex md:flex-grow justify-end space-x-1 mr-[48px] text-[13px] mt-1">
-                        <label>6:00pm</label>
-                      </div>
-                    </div>
-                    <div>
-                      <img
-                        className="rounded-full h-10 w-10 align-middle border-none  ml-2 absolute right-0"
-                        src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
-                        alt="Sender"
-                      />
-                    </div>
+                  <div class="flex flex-col">
+                  <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 shadow-md">
+                    Hi hello how are you buddy
                   </div>
-                  <div className="flex flex-row">
-                    <div>
-                      <img
-                        className="rounded-full h-10 w-10 align-middle border-none"
-                        src={ivgpic}
-                        alt="Sender"
-                      />
-                    </div>
-                    <div class="flex flex-col">
-                      <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 shadow-md">
-                        How is your placemet drive?
-                      </div>
-                      <div className="ml-3 mt-1 text-[13px]">6:00pm</div>
-                    </div>
+                  <div className="ml-3 mt-1 text-[13px]">5:59pm</div>
                   </div>
-                  <div className="flex flex-row py-3 md:flex md:flex-grow justify-end space-x-1">
-                    <div className="flex flex-col">
-                      <div className="bg-white rounded-2xl p-3 mr-[48px] ml-[48px] shadow-md right-0">
-                        It was soo nice!!
-                      </div>
-                      <div class="md:flex md:flex-grow justify-end space-x-1 mr-[48px] text-[13px] mt-1">
-                        <label>6:00pm</label>
-                      </div>
-                    </div>
-                    <div>
-                      <img
-                        className="rounded-full h-10 w-10 align-middle border-none  ml-2 absolute right-0"
-                        src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
-                        alt="Sender"
-                      />
-                    </div>
+                </div>
+                <div className="flex flex-row py-3 md:flex md:flex-grow justify-end space-x-1">
+                <div className="flex flex-col">
+                  <div className="bg-white rounded-2xl p-3 mr-[48px] ml-[48px] shadow-md right-0">
+                    Hi, im fine bro!
                   </div>
-                  <div className="flex flex-row">
-                    <div>
-                      <img
-                        className="rounded-full h-10 w-10 align-middle border-none"
-                        src={ivgpic}
-                        alt="Sender"
-                      />
-                    </div>
-                    <div class="flex flex-col">
-                      <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 mr-[20px] shadow-md">
-                        Did you follow the steps i suggest you in yesterday
-                        meet!
-                      </div>
-                      <div className="ml-3 mt-1 text-[13px]">6:01pm</div>
-                    </div>
+                  <div class="md:flex md:flex-grow justify-end space-x-1 mr-[48px] text-[13px] mt-1"><label>6:00pm</label></div>
                   </div>
-                  <div className="flex flex-row py-3 md:flex md:flex-grow justify-end space-x-1">
-                    <div className="flex flex-col">
-                      <div className="bg-white rounded-2xl p-3 mr-[48px] ml-[48px] shadow-md right-0">
-                        Yes bro! it helped me lot in my way. Thanks for that by
-                        the way.
-                      </div>
-                      <div class="md:flex md:flex-grow justify-end space-x-1 mr-[48px] text-[13px] mt-1">
-                        <label>6:02pm</label>
-                      </div>
-                    </div>
-                    <div>
-                      <img
-                        className="rounded-full h-10 w-10 align-middle border-none  ml-2 absolute right-0"
-                        src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
-                        alt="Sender"
-                      />
-                    </div>
+                  <div>
+                    <img
+                      className="rounded-full h-10 w-10 align-middle border-none  ml-2 absolute right-0"
+                      src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
+                      alt="Sender"
+                    />
                   </div>
-                  <div className="flex flex-row">
-                    <div>
-                      <img
-                        className="rounded-full h-10 w-10 align-middle border-none"
-                        src={ivgpic}
-                        alt="Sender"
-                      />
-                    </div>
-                    <div class="flex flex-col">
-                      <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 shadow-md">
-                        Sounds good! later bye..
-                      </div>
-                      <div className="ml-3 mt-1 text-[13px]">6:02pm</div>
-                    </div>
+                </div>
+                <div className="flex flex-row">
+                
+                  <div>
+                    <img
+                      className="rounded-full h-10 w-10 align-middle border-none"
+                      src={ivgpic}
+                      alt="Sender"
+                    />
                   </div>
-                  <div className="flex flex-row py-3 md:flex md:flex-grow justify-end space-x-1">
-                    <div className="flex flex-col">
-                      <div className="bg-white rounded-2xl p-3 mr-[48px] ml-[48px] shadow-md right-0">
-                        bye....
-                      </div>
-                      <div class="md:flex md:flex-grow justify-end space-x-1 mr-[48px] text-[13px] mt-1">
-                        <label>6:02pm</label>
-                      </div>
-                    </div>
-                    <div>
-                      <img
-                        className="rounded-full h-10 w-10 align-middle border-none  ml-2 absolute right-0"
-                        src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
-                        alt="Sender"
-                      />
-                    </div>
+                  <div class="flex flex-col">
+                  <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 shadow-md">
+                    How is your placemet drive?
+                  </div>
+                  <div className="ml-3 mt-1 text-[13px]">6:00pm</div>
+                  </div>
+                </div>
+                <div className="flex flex-row py-3 md:flex md:flex-grow justify-end space-x-1">
+                <div className="flex flex-col">
+                  <div className="bg-white rounded-2xl p-3 mr-[48px] ml-[48px] shadow-md right-0">
+                    It was soo nice!!
+                  </div>
+                  <div class="md:flex md:flex-grow justify-end space-x-1 mr-[48px] text-[13px] mt-1"><label>6:00pm</label></div>
+                  </div>
+                  <div>
+                    <img
+                      className="rounded-full h-10 w-10 align-middle border-none  ml-2 absolute right-0"
+                      src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
+                      alt="Sender"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-row">
+                
+                  <div>
+                    <img
+                      className="rounded-full h-10 w-10 align-middle border-none"
+                      src={ivgpic}
+                      alt="Sender"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                  <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 mr-[20px] shadow-md">
+                    Did you follow the steps i suggest you in yesterday meet!
+                  </div>
+                  <div className="ml-3 mt-1 text-[13px]">6:01pm</div>
+                  </div>
+                </div>
+                <div className="flex flex-row py-3 md:flex md:flex-grow justify-end space-x-1">
+                <div className="flex flex-col">
+                  <div className="bg-white rounded-2xl p-3 mr-[48px] ml-[48px] shadow-md right-0">
+                    Yes bro! it helped me lot in my way.
+                    Thanks for that by the way.
+                  </div>
+                  <div class="md:flex md:flex-grow justify-end space-x-1 mr-[48px] text-[13px] mt-1"><label>6:02pm</label></div>
+                  </div>
+                  <div>
+                    <img
+                      className="rounded-full h-10 w-10 align-middle border-none  ml-2 absolute right-0"
+                      src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
+                      alt="Sender"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-row">
+                
+                  <div>
+                    <img
+                      className="rounded-full h-10 w-10 align-middle border-none"
+                      src={ivgpic}
+                      alt="Sender"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                  <div className="bg-blue-500 rounded-2xl p-3 items-center ml-2 shadow-md">
+                    Sounds good! later bye..
+                  </div>
+                  <div className="ml-3 mt-1 text-[13px]">6:02pm</div>
+                  </div>
+                </div>
+                <div className="flex flex-row py-3 md:flex md:flex-grow justify-end space-x-1">
+                <div className="flex flex-col">
+                  <div className="bg-white rounded-2xl p-3 mr-[48px] ml-[48px] shadow-md right-0">
+                    bye....
+                  </div>
+                  <div class="md:flex md:flex-grow justify-end space-x-1 mr-[48px] text-[13px] mt-1"><label>6:02pm</label></div>
+                  </div>
+                  <div>
+                    <img
+                      className="rounded-full h-10 w-10 align-middle border-none  ml-2 absolute right-0"
+                      src="https://i0.wp.com/newdoorfiji.com/wp-content/uploads/2018/03/profile-img-1.jpg?ssl=1"
+                      alt="Sender"
+                    />
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="px-4 absolute inset-x-0 bottom-0 mb-2 mt-2">
-              <form class="flex items-center mt-2">
-                <label for="simple-search" class="sr-only">
-                  Type message here
-                </label>
-                <div class="relative w-full">
-                  <input
-                    type="text"
-                    id="simple-search"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Type message here"
-                    autoComplete="off"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-500 rounded-lg border border-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-send"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-                  </svg>
-                  <span class="sr-only">Type message here</span>
-                </button>
-              </form>
             </div>
           </div>
+          <div class="px-4 absolute inset-x-0 bottom-0 mb-2 mt-2">
+          <form class="flex items-center mt-2">
+              <label for="simple-search" class="sr-only">
+                Type message here
+              </label>
+              <div class="relative w-full">
+                <input
+                  type="text"
+                  id="simple-search"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Type message here"
+                  autoComplete="off"
+                />
+              </div>
+              <button
+                type="submit"
+                class="p-2.5 ml-2 text-sm font-medium text-white bg-blue-500 rounded-lg border border-blue-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+</svg>
+                <span class="sr-only">Type message here</span>
+              </button>
+            </form>
+          </div>
+        </div>
         </div>
       </div>
     </div>

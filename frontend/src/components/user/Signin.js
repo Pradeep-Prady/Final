@@ -50,7 +50,7 @@ const Signin = () => {
                 </span>
               </label>
               <div className="btn mt-2 flex justify-center">
-                <button className="w-3/6 text-[white]  hover:text-[gray] p-3  rounded-lg tracking-wide font-semibold  cursor-pointer transition ease-in duration-500 bg-gradient-to-r from-indigo-500 to-blue-500">
+                <button className="text-[white] hover:scale-105 bg-black px-4 py-2  rounded-md tracking-wide   cursor-pointer transition ease-in duration-500 ">
                   Login
                 </button>
               </div>

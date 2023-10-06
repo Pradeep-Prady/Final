@@ -32,9 +32,9 @@ import AccountDetails from "./components/admin/account/AccountDetails";
 import AccountEdit from "./components/admin/account/AccountEdit";
 import GeneralQueryDetails from "./components/admin/generalQueries/GeneralQueryDetails";
 import Community from "./components/user/Community";
-import Query from "./components/user/Query";
+import Query from "./components/user/CQuery";
 import Inviteget from "./components/user/Inviteget";
-import Feedback from "./components/user/Feedback";
+import Feedback from "./components/user/GQuery";
 import Home from "./components/user/Home";
 
 function App() {
@@ -77,7 +77,7 @@ function App() {
           element: <Inviteget />,
         },
         {
-          path: "/feedback",
+          path: "/gquery",
           element: <Feedback />,
         },
         {

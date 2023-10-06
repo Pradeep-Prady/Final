@@ -11,7 +11,7 @@ const Inviteget=()=>{
     const [invitationAccepted, setInvitationAccepted] = useState(false);
     return(
         <div>
-            <Header/>
+            {/* <Header/> */}
             <div className="m-4">
                 <div className="bg-blue-200 shadow-2xl shadow-gray-300 w-[500px] ml-[400px] rounded-md" >
                     {/*<h1 className="p-2 font-bold">VIEW DETAILS</h1>*/}

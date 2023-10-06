@@ -22,7 +22,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import BasicTimePicker from "../userlayouts/TimePicker";
 import profile from "../../assets/img/Avatar.jpg";
-
+import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -437,23 +437,29 @@ const Invite = () => {
               className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen flex items-center justify-center bg-black "
               // onClick={() => setProfileOpen(false)}
             >
-              <div className="text- p-10 relative rounded-md bg-mylight sm:w-8/12 md:w-5/12">
+              <div className="text- p-10 relative rounded-md bg-white sm:w-8/12 md:w-6/12">
                 <div className="  absolute right-5 ">
                   <button
                     onClick={() => setProfileOpen(false)}
                     className="bg-black text-white px-3 py-1 rounded-md"
                   >
-                    Close
+                     <CloseFullscreenIcon/>
                   </button>
                 </div>
                 <div className="flex items-center justify-center">
-                  <img className="w-[100px]" src={profile} alt="profileImg" />
+                  <img
+                    className="w-[100px] rounded-md"
+                    src={profile}
+                    alt="profileImg"
+                  />
                 </div>
                 <div className=" text-center items-center justify-center">
                   <p className="text-[18px] py-1 font-semibold">Syed Irsath</p>
-                  <p className="text-[14px] py-1">Backend Developer</p>
-                  <p className="text-[14px] py-1 te">Warrior</p>
-                  <p className="text-[14px] py-1">
+                  <p className="text-[14px] py-1 font-semibold">
+                    Backend Developer
+                  </p>
+                  <p className="text-[14px] py-1 font-semibold">Warrior</p>
+                  <p className="text-[14px] py-1 font-semibold">
                     I AM DOWN, BUT I NOT LET YOU DOWN
                   </p>
                 </div>
@@ -478,6 +484,8 @@ const Invite = () => {
                     <p> Selenium and Java - 1Yrs</p>
                   </div>
                 </div>
+
+                <div className="grid grid-cols-2">
                 <div className="my-2">
                   <p className="text-[16px] font-semibold">Preceding</p>
 
@@ -487,6 +495,15 @@ const Invite = () => {
                   <p className="text-[16px] font-semibold">Existing</p>
 
                   <p className="text-[14px]">Google, California</p>
+                </div>
+                  </div>
+               
+                <div className="my-2">
+                  <p className="text-[16px] font-semibold">social handles</p>
+
+                  <p className="text-[14px]">
+                    linkedin.com/in/syed-israth-786268202
+                  </p>
                 </div>
               </div>
             </div>

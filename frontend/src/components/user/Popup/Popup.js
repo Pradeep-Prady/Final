@@ -17,7 +17,7 @@ export const Popup = ({ closePopup, sendButtonClick }) => {
       <div className="bg-white p-4 shadow-md rounded-md w-2/5">
       <h1 className="text-6xl font-bold">QUESTION DETAILS</h1>
       <h2 className="text-lg font-semibold">Name: John</h2>
-      <h2 className="text-lg font-semibold">Course : Computer Science and Engineering</h2>
+      {/* <h2 className="text-lg font-semibold">Course : Computer Science and Engineering</h2> */}
       <h2 className="font-semibold pt-2">Request About</h2>
         <h2 className="text-lg font-semibold">Service Name : Career Guidance</h2>
      
@@ -55,7 +55,7 @@ export const Popup = ({ closePopup, sendButtonClick }) => {
     </div>
   )}
         <button
-          className="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md"
+          className="mt-2 bg-black text-white px-4 py-2 rounded-md"
           onClick={closePopup}
         >
           Close

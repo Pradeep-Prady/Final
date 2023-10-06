@@ -11,6 +11,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import PaymentIcon from "@mui/icons-material/Payment";
 import LogoutIcon from "@mui/icons-material/Logout";
+import LinkIcon from '@mui/icons-material/Link';
+import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
 const Sidebar = () => {
   return (
@@ -52,15 +54,15 @@ const Sidebar = () => {
         <Link to="/connect">
           <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
             <div>
-              <PersonIcon />
+              <LinkIcon />
             </div>
             <h1 className="pl-3 text-[18px]">Connect</h1>
           </div>
         </Link>
-        <Link to="/query">
+        <Link to="/gquery">
           <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
             <div>
-              <PersonIcon />
+              <QueryBuilderIcon />
             </div>
             <h1 className="pl-3 text-[18px]">Query Arise</h1>
           </div>
