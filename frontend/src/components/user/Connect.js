@@ -3,6 +3,7 @@ import compic from "../../assets/img/community.png";
 import ivspic from "../../assets/img/invitesent.png";
 import ivgpic from "../../assets/img/inviteget.png";
 import { Link } from "react-router-dom";
+
 function Connect() {
   return (
     <div className>

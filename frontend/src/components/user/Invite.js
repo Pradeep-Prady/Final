@@ -22,7 +22,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import BasicTimePicker from "../userlayouts/TimePicker";
 import profile from "../../assets/img/Avatar.jpg";
-import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
+import CloseFullscreenIcon from "@mui/icons-material/CloseFullscreen";
+import { useState } from "react";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -77,9 +78,11 @@ const Invite = () => {
     },
   ];
 
-  const [profileOpen, setProfileOpen] = React.useState(false);
+  const [profileOpen, setProfileOpen] = useState(false);
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [audio, setAudio] = useState(true);
+  const [video, setVideo] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -302,8 +305,7 @@ const Invite = () => {
                 </div>
                 {/* call type ends */}
               </div>
-              {/* timing and fee ends */}
-              {/* invite begins */}
+
               <div className="flex flex-col justify-evenly items-center ">
                 <button
                   onClick={handleClickOpen}
@@ -312,7 +314,7 @@ const Invite = () => {
                   <p className="px-3">Invite</p>
                   <SendIcon sx={{ fontSize: 20 }} />
                 </button>
-                <BootstrapDialog
+                {/* <BootstrapDialog
                   onClose={handleClose}
                   aria-labelledby="customized-dialog-title"
                   open={open}
@@ -347,9 +349,6 @@ const Invite = () => {
                           </h2>
                         </div>
                         <div className="justify-start pt-2 items-center">
-                          {/* <h1 className="font-bold text-[20px]">
-                          Time <span className="text-red-500">*</span>
-                        </h1> */}
                           <div className="flex">
                             <div>
                               <h1 className="font-bold text-[20px]">From:</h1>
@@ -422,14 +421,102 @@ const Invite = () => {
                       Confirm
                     </button>
                   </DialogActions>
-                </BootstrapDialog>
-                {/* <div>
-                  <FavoriteBorderIcon />
-                  <BookmarkBorderIcon />
-                  <InfoIcon />
-                </div> */}
+                </BootstrapDialog> */}
+
+                {open ? (
+                  <div
+                    className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen flex items-center justify-center bg-black "
+                    // onClick={() => setProfileOpen(false)}
+                  >
+                    <div className=" p-5  relative rounded-md bg-white h-auto sm:w-10/12 md:w-5/12">
+                      <div className="absolute right-5 ">
+                        <button
+                          onClick={() => setOpen(false)}
+                          className="bg-black text-white px-3 py-1 rounded-md"
+                        >
+                          <CloseFullscreenIcon />
+                        </button>
+                      </div>
+                      <div className="flex items-center justify-center">
+                        <h2 className="font-bold text-[24px]">My Details</h2>
+                      </div>
+                      <div className=" my-5">
+                        <div className="grid grid-cols-2 my-2">
+                          <p className="text-[16px] font-bold">Username</p>
+                          <p className="text-[16px] ">Mano Sundar</p>
+                        </div>
+                        <div className="grid grid-cols-2 my-2">
+                          <p className="ttext-[16px] font-bold">Email</p>
+                          <p className="text-[16px]  ">
+                            manosundarmanivel@gmail.com
+                          </p>
+                        </div>
+                        <div className="grid grid-cols-2 my-3">
+                          <div className="w-10/12">
+                            <p className="text-[16px] font-bold">From</p>
+                            <BasicTimePicker />
+                          </div>
+                          <div className="w-10/12">
+                            <p className="text-[16px] font-bold">To</p>
+                            <BasicTimePicker />
+                          </div>
+                        </div>
+                        <div className="grid grid-cols-1">
+                          <p className="text-[16px] font-bold">Mode *</p>
+                          <div className="flex gap-5 my-3">
+                            <button
+                              onClick={() => setVideo(!video)}
+                              className={` ${
+                                video
+                                  ? "bg-black text-white"
+                                  : "border-black border-2"
+                              }  rounded-full px-4 py-2`}
+                            >
+                              Video <VideocamIcon />
+                            </button>
+                            <button
+                              className={` ${
+                                audio
+                                  ? "bg-black text-white"
+                                  : "border-black border-2"
+                              }  rounded-full px-4 py-2`}
+                            >
+                              Audio <HeadsetMicIcon />
+                            </button>
+                          </div>
+                        </div>
+
+                        <div className="grid grid-cols-1">
+                          <h2 className="text-[16px] font-bold my-2">
+                            Request About
+                          </h2>
+                          <h2 className="">Service Name *</h2>
+                          <input
+                            placeholder="Ex: Carrier Guidance"
+                            type="text"
+                            className="my-4 w-4/6 px-2 border rounded h-12"
+                          />
+                          <textarea
+                            placeholder="Write Your Question Here"
+                            className="border h-16 w-full p-2"
+                          />
+                        </div>
+                        <div className="flex gap-8 mt-3 items-center justify-end">
+                          <button
+                            onClick={() => setOpen(false)}
+                            className="border-2 border-black rounded-md px-4 py-2"
+                          >
+                            Cancel
+                          </button>
+                          <button className="bg-black text-white rounded-md px-4 py-2">
+                            Accept
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
               </div>
-              {/* invite ends */}
             </div>
           ))}
           {profileOpen ? (
@@ -443,7 +530,7 @@ const Invite = () => {
                     onClick={() => setProfileOpen(false)}
                     className="bg-black text-white px-3 py-1 rounded-md"
                   >
-                     <CloseFullscreenIcon/>
+                    <CloseFullscreenIcon />
                   </button>
                 </div>
                 <div className="flex items-center justify-center">
@@ -486,18 +573,18 @@ const Invite = () => {
                 </div>
 
                 <div className="grid grid-cols-2">
-                <div className="my-2">
-                  <p className="text-[16px] font-semibold">Preceding</p>
+                  <div className="my-2">
+                    <p className="text-[16px] font-semibold">Preceding</p>
 
-                  <p className="text-[14px]">Kongu Engineering college</p>
-                </div>
-                <div className="my-2">
-                  <p className="text-[16px] font-semibold">Existing</p>
-
-                  <p className="text-[14px]">Google, California</p>
-                </div>
+                    <p className="text-[14px]">Kongu Engineering college</p>
                   </div>
-               
+                  <div className="my-2">
+                    <p className="text-[16px] font-semibold">Existing</p>
+
+                    <p className="text-[14px]">Google, California</p>
+                  </div>
+                </div>
+
                 <div className="my-2">
                   <p className="text-[16px] font-semibold">social handles</p>
 
