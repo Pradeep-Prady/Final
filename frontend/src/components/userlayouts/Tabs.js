@@ -685,7 +685,7 @@ export default function LabTabs() {
             <div className="flex justify-evenly">
               <p>Free Tutoring</p>
               <div
-                className={`w-12 h-6 bg-violet-400 rounded-full cursor-pointer ${
+                className={`w-12 h-6 bg-black rounded-full cursor-pointer ${
                   isToggled ? "dark" : " "
                 }`}
                 onClick={toggleSwitch}

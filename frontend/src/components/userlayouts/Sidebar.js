@@ -6,7 +6,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
 import Proflie from "../../assets/img/Avatar Image.svg";
 import SettingsIcon from "@mui/icons-material/Settings";
-import PersonIcon from '@mui/icons-material/Person';
+import PersonIcon from "@mui/icons-material/Person";
 import HomeIcon from "@mui/icons-material/Home";
 import AssessmentIcon from "@mui/icons-material/Assessment";
 import PaymentIcon from "@mui/icons-material/Payment";
@@ -47,6 +47,22 @@ const Sidebar = () => {
               <PaymentIcon />
             </div>
             <h1 className="pl-3 text-[18px]">Payments</h1>
+          </div>
+        </Link>
+        <Link to="/connect">
+          <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
+            <div>
+              <PersonIcon />
+            </div>
+            <h1 className="pl-3 text-[18px]">Connect</h1>
+          </div>
+        </Link>
+        <Link to="/query">
+          <div className="flex pt-4 pb-4 items-center hover:text-[#0094FE]">
+            <div>
+              <PersonIcon />
+            </div>
+            <h1 className="pl-3 text-[18px]">Query Arise</h1>
           </div>
         </Link>
         <Link to="/settings">

@@ -31,6 +31,11 @@ import AccountAddForm from "./components/admin/account/AccountAddForm";
 import AccountDetails from "./components/admin/account/AccountDetails";
 import AccountEdit from "./components/admin/account/AccountEdit";
 import GeneralQueryDetails from "./components/admin/generalQueries/GeneralQueryDetails";
+import Community from "./components/user/Community";
+import Query from "./components/user/Query";
+import Inviteget from "./components/user/Inviteget";
+import Feedback from "./components/user/Feedback";
+import Home from "./components/user/Home";
 
 function App() {
   const appRouter = createBrowserRouter([
@@ -42,6 +47,7 @@ function App() {
           path: "/",
           element: <Dashboard />,
         },
+
         {
           path: "/settings",
           element: <Settings />,
@@ -55,14 +61,34 @@ function App() {
           element: <Invite />,
         },
         {
-          path: "/connectpage",
+          path: "/connect",
           element: <Connect />,
+        },
+        {
+          path: "/community",
+          element: <Community />,
+        },
+        {
+          path: "/query",
+          element: <Query />,
+        },
+        {
+          path: "/inviteget",
+          element: <Inviteget />,
+        },
+        {
+          path: "/feedback",
+          element: <Feedback />,
         },
         {
           path: "/testimonials",
           element: <Testimonials />,
         },
       ],
+    },
+    {
+      path: "/home",
+      element: <Home />,
     },
     {
       path: "/signin",

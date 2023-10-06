@@ -21,6 +21,7 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
 import BasicTimePicker from "../userlayouts/TimePicker";
+import profile from "../../assets/img/Avatar.jpg";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -75,6 +76,8 @@ const Invite = () => {
       video_fee: "Rs:1/min",
     },
   ];
+
+  const [profileOpen, setProfileOpen] = React.useState(false);
 
   const [open, setOpen] = React.useState(false);
 
@@ -238,87 +241,7 @@ const Invite = () => {
             </label>
           </div>
         </div>
-        {/* <div className="m-5 border rounded-md">
-          <div className="p-4 grid grid-cols-2">
-            <h2 className="flex justify-start font-bold text-[1.5em]">
-              <span className="text-[#0094FF] ">Magic</span>Search
-            </h2>
-            <OutlinedInput
-              sx={{ width: "100%", borderRadius: "10em", height: "75%" }}
-              id="outlined-adornment-search"
-              endAdornment={
-                <InputAdornment position="end">
-                  <SearchIcon />
-                </InputAdornment>
-              }
-              placeholder="Name/Skills/School/College/Company"
-              aria-describedby="outlined-search-helper-text"
-              inputProps={{
-                "aria-label": "search",
-              }}
-            />
-            <div className="mt-5">
-              <label className="shadow shadow-[gray] rounded-full pl-2">
-                Sort By:
-                <select
-                  name="Sort By"
-                  defaultValue="Relevance"
-                  className="rounded-full"
-                >
-                  <option value="Relevance">Relevance</option>
-                  <option value="Price--Low to High">Price--Low to High</option>
-                  <option value="Price--High to Low">Price--High to Low</option>
-                  <option value="Newest First">Newest First</option>
-                </select>
-              </label>
-            </div>
-          </div>
-          {lists.map((list) => (
-            <div className="flex justify-between border rounded-xl shadow-md m-5 p-3">
-              <div className="flex items-center">
-                <img
-                  alt="img"
-                  src={list.image}
-                  className=" m-2 h-[100px] w-[100px] rounded-full object-cover"
-                />
-                <div className="flex flex-col justify-center">
-                  <h1>{list.name}</h1>
-                  <p>{list.role}</p>
-                </div>
-              </div>
-            
-              <div className="flex flex-col justify-evenly items-center">
-                <h2 className="text-[1em] tracking-[0.050em]">
-                  Time Available:<span>{list.time_starts}</span>-
-                  <span>{list.time_ends}</span>
-                </h2>
-             
-                <div className="grid grid-cols-2 m-2 gap-5">
-                  <div className="flex flex-col  items-center">
-                    <HeadsetMicIcon />
-                    <p>{list.audio_fee}</p>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <VideocamIcon />
-                    <p>{list.video_fee}</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex flex-col justify-evenly items-center">
-                <button className="flex border rounded-3xl text-white p-2 bg-[#0094FF]">
-                  <p className="mx-1">INVITE</p>
-                  <SendIcon />
-                </button>
-                <div>
-                  <FavoriteBorderIcon />
-                  <BookmarkBorderIcon />
-                  <InfoIcon />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
+
         <div className="m-5 border rounded-3xl">
           <div className="p-6 grid grid-cols-2">
             <h2 className="flex justify-start font-bold text-[25px]">
@@ -339,6 +262,7 @@ const Invite = () => {
               }}
             />
           </div>
+
           {lists.map((list) => (
             <div className="flex justify-between border rounded-xl shadow-md m-10 px-5">
               {/* profile + name+ role begins */}
@@ -349,7 +273,12 @@ const Invite = () => {
                   className=" m-2 h-[100px] w-[100px] rounded-full object-cover"
                 />
                 <div className="flex flex-col justify-center">
-                  <h1 className="font-bold text-[22px]">{list.name}</h1>
+                  <h1
+                    onClick={() => setProfileOpen(true)}
+                    className="font-bold text-[22px] cursor-pointer"
+                  >
+                    {list.name}
+                  </h1>
                   <p>{list.role}</p>
                 </div>
               </div>
@@ -503,6 +432,65 @@ const Invite = () => {
               {/* invite ends */}
             </div>
           ))}
+          {profileOpen ? (
+            <div
+              className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen flex items-center justify-center bg-black "
+              // onClick={() => setProfileOpen(false)}
+            >
+              <div className="text- p-10 relative rounded-md bg-mylight sm:w-8/12 md:w-5/12">
+                <div className="  absolute right-5 ">
+                  <button
+                    onClick={() => setProfileOpen(false)}
+                    className="bg-black text-white px-3 py-1 rounded-md"
+                  >
+                    Close
+                  </button>
+                </div>
+                <div className="flex items-center justify-center">
+                  <img className="w-[100px]" src={profile} alt="profileImg" />
+                </div>
+                <div className=" text-center items-center justify-center">
+                  <p className="text-[18px] py-1 font-semibold">Syed Irsath</p>
+                  <p className="text-[14px] py-1">Backend Developer</p>
+                  <p className="text-[14px] py-1 te">Warrior</p>
+                  <p className="text-[14px] py-1">
+                    I AM DOWN, BUT I NOT LET YOU DOWN
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[16px] font-semibold">Bio</p>
+                  <p className="text-[14px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    euismod, urna id aliquet ultrices, justo nisl tincidunt
+                    nunc, ac lacinia nunc nisl nec nunc.
+                  </p>
+                </div>
+                <div className="my-2">
+                  <p className="text-[16px] font-semibold">
+                    Skills and years of experience
+                  </p>
+
+                  <div className="text-[14px] grid grid-cols-2 mt-1">
+                    <p> AutoCAD 2011 - 2Yrs</p>
+                    <p>Fusion 360 -4Yrs</p>
+                    <p>CRED 7.1 -3Yrs</p>
+                    <p> SolidWorks 2018 - 3Yrs</p>
+                    <p> Selenium and Java - 1Yrs</p>
+                  </div>
+                </div>
+                <div className="my-2">
+                  <p className="text-[16px] font-semibold">Preceding</p>
+
+                  <p className="text-[14px]">Kongu Engineering college</p>
+                </div>
+                <div className="my-2">
+                  <p className="text-[16px] font-semibold">Existing</p>
+
+                  <p className="text-[14px]">Google, California</p>
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
